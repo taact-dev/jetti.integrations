@@ -1,0 +1,41 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb-base",
+    "plugins": [
+        "flowtype",
+        "import"
+    ],
+    "ecmaFeatures": {
+        "modules": true
+    },
+    "env": {
+        "node": true
+    },
+    "globals": {
+        "rootRequire": true,
+        "Promise": true
+    },
+    "rules": {
+        "no-empty-label": 0,
+        "space-after-keywords": 0,
+        "indent": ["error", 4],
+        "arrow-body-style": [2, "as-needed"],
+        "eol-last": 0,
+        "func-names": 0,
+        "no-param-reassign": 0,
+        "one-var": [0, "never"],
+        "max-len": [2, 120, 4],
+        "allow-multiple-properties-per-line": 0,
+        "no-restricted-syntax": 0,
+        "no-await-in-loop": 0,
+        "import/first": 0,
+        "import/no-extraneous-dependencies": ["error", {
+            "devDependencies": ["test/**/*.js"]
+        }]
+    },
+    "settings": {
+        "flowtype": {
+            "onlyFilesWithFlowAnnotation": true
+        }
+    }
+}
